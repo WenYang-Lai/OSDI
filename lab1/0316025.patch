@@ -1,0 +1,49 @@
+diff -ur template_osdi/linux-0.11/include/linux/sched.h 0316025/linux-0.11/include/linux/sched.h
+--- template_osdi/linux-0.11/include/linux/sched.h	2018-03-06 19:10:20.914312079 +0800
++++ 0316025/linux-0.11/include/linux/sched.h	2018-03-06 01:02:45.808900683 +0800
+@@ -1,7 +1,7 @@
+ #ifndef _SCHED_H
+ #define _SCHED_H
+ 
+-#define NR_TASKS 0
++#define NR_TASKS 24
+ #define HZ 100
+ 
+ #define FIRST_TASK task[0]
+diff -ur template_osdi/linux-0.11/init/main.c 0316025/linux-0.11/init/main.c
+--- template_osdi/linux-0.11/init/main.c	2018-03-06 19:10:20.915312068 +0800
++++ 0316025/linux-0.11/init/main.c	2018-03-06 01:02:45.809900685 +0800
+@@ -137,7 +137,6 @@
+ 	hd_init();
+ 	floppy_init();
+ 	sti();
+-	panic(""); 
+ 	move_to_user_mode();
+ 	if (!fork()) {		/* we count on this going ok */
+ 		init();
+@@ -196,6 +195,7 @@
+ 			continue;
+ 		}
+ 		if (!pid) {
++			printf("Hello 0316025\n");
+ 			close(0);close(1);close(2);
+ 			setsid();
+ 			(void) open("/dev/tty0",O_RDWR,0);
+diff -ur template_osdi/linux-0.11/Makefile 0316025/linux-0.11/Makefile
+--- template_osdi/linux-0.11/Makefile	2018-03-06 19:10:20.912312107 +0800
++++ 0316025/linux-0.11/Makefile	2018-03-06 01:02:45.597900362 +0800
+@@ -34,11 +34,11 @@
+ LIBS	=lib/lib.a
+ 
+ .c.s:
+-@$(CC) $(CFLAGS) -S -o $*.s $<
++	@$(CC) $(CFLAGS) -S -o $*.s $<
+ .s.o:
+-@$(AS)  -o $*.o $<
++	@$(AS)  -o $*.o $<
+ .c.o:
+-@$(CC) $(CFLAGS) -c -o $*.o $<
++	@$(CC) $(CFLAGS) -c -o $*.o $<
+ 
+ all:	Image	
+ 
