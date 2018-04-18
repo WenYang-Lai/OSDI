@@ -28,12 +28,12 @@ This is forked and modified from MIT's Xv6
 ## 4.1 Physical Memory Management
 - kernel/mem.c
     - using ```boot_alloc``` allocate pages
-    ```
+    ```c
     pages = (struct PageInfo*)boot_alloc(sizeof(struct PageInfo) * npages);
 	memset(pages, 0, sizeof(struct PageInfo) * npages);
     ```
     - page_init()
-    ```
+    ```c
     for (i = 0; i < npages; i++) {
 	
 		if(i == 0){
@@ -59,7 +59,7 @@ This is forked and modified from MIT's Xv6
     }
     ```
     - page_alloc()
-    ```
+    ```c
     struct PageInfo* page_alloc(int alloc_flags)
     {
         /* TODO */
@@ -73,7 +73,7 @@ This is forked and modified from MIT's Xv6
     }
     ```
     - page_free()
-    ```
+    ```c
     void page_free(struct PageInfo *pp)
     {
         // Fill this function in
@@ -89,7 +89,7 @@ This is forked and modified from MIT's Xv6
 ## 4.2 Page Table Management (Virtual Memmory)
 - kernel/mem.c
     - pgdir_walk()
-    ```
+    ```c
     pte_t * pgdir_walk(pde_t *pgdir, const void *va, int create)
     {
         // Fill this function in
@@ -109,7 +109,7 @@ This is forked and modified from MIT's Xv6
     }
     ```
     - boot_map_region()
-    ```
+    ```c
     static void boot_map_region(pde_t *pgdir, uintptr_t va, size_t size, physaddr_t pa, int perm)
     {
         /* TODO */
@@ -123,7 +123,7 @@ This is forked and modified from MIT's Xv6
     }
     ```
     - page_lookup()
-    ```
+    ```c
     struct PageInfo* page_lookup(pde_t *pgdir, void *va, pte_t **pte_store)
     {
         /* TODO */
@@ -134,7 +134,7 @@ This is forked and modified from MIT's Xv6
     }
     ```
     - page_insert()
-    ```
+    ```c
     int page_insert(pde_t *pgdir, struct PageInfo *pp, void *va, int perm)
     {
         /* TODO */
@@ -153,7 +153,7 @@ This is forked and modified from MIT's Xv6
     }
     ```
     - page_remove()
-    ```
+    ```c
     void page_remove(pde_t *pgdir, void *va)
     {
         /* TODO */
@@ -168,7 +168,7 @@ This is forked and modified from MIT's Xv6
 ## 4.3 Static Mapping
 - kernel/mem.c
     - mem_init
-    ```
+    ```c
     boot_map_region(kern_pgdir, KSTACKTOP - KSTKSIZE, KSTKSIZE, PADDR(bootstack), PTE_W);
     boot_map_region(kern_pgdir, KERNBASE, -KERNBASE, 0, PTE_W);
     ```
@@ -177,11 +177,10 @@ This is forked and modified from MIT's Xv6
     -  TRAPHANDLER_NOEC(trap_page_fault, T_PGFLT)
 - kernel/trap.c
     - trap_init()
-    ```
+    ```c
     /* page fault */
 	extern void trap_page_fault();
 	SETGATE(idt[T_PGFLT], 0, GD_KT, trap_page_fault, 0);
-
     ```
     - trap_dispatch()
     - Add ```trap_page_fault_handler()``
