@@ -183,4 +183,4 @@ This is forked and modified from MIT's Xv6
 	SETGATE(idt[T_PGFLT], 0, GD_KT, trap_page_fault, 0);
     ```
     - trap_dispatch()
-    - Add ```trap_page_fault_handler()``
+    - Add ```trap_page_fault_handler()```
