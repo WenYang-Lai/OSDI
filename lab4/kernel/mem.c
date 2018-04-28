@@ -365,7 +365,7 @@ pgdir_walk(pde_t *pgdir, const void *va, int create)
 {
 	// Fill this function in
     /* TODO */
-	pde_t *pte = &pgdir[PDX(va)];
+	pde_t *pde = &pgdir[PDX(va)];
 	pte_t *pte_kva;
 	if(*pte & PTE_P)
 		pte_kva = KADDR(PTE_ADDR(*pte));
@@ -374,7 +374,7 @@ pgdir_walk(pde_t *pgdir, const void *va, int create)
 		if(!create || !(pp = page_alloc(ALLOC_ZERO))) return NULL;
 		pp->pp_ref++;
 		pte_kva = page2kva(pp);
-		*pte =  page2pa(pp) | PTE_P | PTE_U | PTE_W;
+		*pde =  page2pa(pp) | PTE_P | PTE_U | PTE_W;
 	}
 	return &pte_kva[PTX(va)];
 }
