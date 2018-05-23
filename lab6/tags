@@ -1,0 +1,932 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALLOC_ZERO	kernel/mem.h	/^	ALLOC_ZERO = 1<<0,$/;"	e	enum:__anon4
+ALT	kernel/kbd.c	16;"	d	file:
+AS	Makefile	/^AS	=as$/;"	m
+ASM	lib/string.c	12;"	d	file:
+ASSERT	kernel/lapic.c	25;"	d	file:
+BCAST	kernel/lapic.c	28;"	d	file:
+BOOT_OBJS	boot/Makefile	/^BOOT_OBJS = boot\/boot.o boot\/main.o$/;"	m
+BUFLEN	lib/readline.c	8;"	d	file:
+BUF_LEN	inc/shell.h	5;"	d
+BUSY	kernel/lapic.c	30;"	d	file:
+C	kernel/kbd.c	81;"	d	file:
+CAPSLOCK	kernel/kbd.c	18;"	d	file:
+CC	Makefile	/^CC	=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -m32 -Wall -O -fstrength-reduce -fomit-frame-pointer -finline-functions -nostdinc -fno-builtin $/;"	m
+CMDBYTE	inc/kbd.h	60;"	d
+CONSBUFSIZE	kernel/kbd.c	162;"	d	file:
+CPUS	Makefile	/^CPUS ?= 1$/;"	m
+CPU_HALTED	kernel/cpu.h	/^	CPU_HALTED,$/;"	e	enum:__anon5
+CPU_STARTED	kernel/cpu.h	/^	CPU_STARTED,$/;"	e	enum:__anon5
+CPU_UNUSED	kernel/cpu.h	/^	CPU_UNUSED = 0,$/;"	e	enum:__anon5
+CR0_AM	inc/mmu.h	96;"	d
+CR0_CD	inc/mmu.h	98;"	d
+CR0_EM	inc/mmu.h	91;"	d
+CR0_ET	inc/mmu.h	93;"	d
+CR0_MP	inc/mmu.h	90;"	d
+CR0_NE	inc/mmu.h	94;"	d
+CR0_NW	inc/mmu.h	97;"	d
+CR0_PE	inc/mmu.h	89;"	d
+CR0_PG	inc/mmu.h	99;"	d
+CR0_TS	inc/mmu.h	92;"	d
+CR0_WP	inc/mmu.h	95;"	d
+CR4_DE	inc/mmu.h	104;"	d
+CR4_MCE	inc/mmu.h	102;"	d
+CR4_PCE	inc/mmu.h	101;"	d
+CR4_PSE	inc/mmu.h	103;"	d
+CR4_PVI	inc/mmu.h	106;"	d
+CR4_TSD	inc/mmu.h	105;"	d
+CR4_VME	inc/mmu.h	107;"	d
+CTL	kernel/kbd.c	15;"	d	file:
+Command	inc/shell.h	/^struct Command {$/;"	s
+Command	kernel/shell.c	/^struct Command {$/;"	s	file:
+CpuInfo	kernel/cpu.h	/^struct CpuInfo {$/;"	s
+DEASSERT	kernel/lapic.c	26;"	d	file:
+DEBUG_SPINLOCK	kernel/spinlock.h	7;"	d
+DELIVS	kernel/lapic.c	24;"	d	file:
+ELFHDR	boot/main.c	33;"	d	file:
+ELF_MAGIC	inc/elf.h	4;"	d
+ELF_PROG_FLAG_EXEC	inc/elf.h	52;"	d
+ELF_PROG_FLAG_READ	inc/elf.h	54;"	d
+ELF_PROG_FLAG_WRITE	inc/elf.h	53;"	d
+ELF_PROG_LOAD	inc/elf.h	49;"	d
+ELF_SHN_UNDEF	inc/elf.h	63;"	d
+ELF_SHT_NULL	inc/elf.h	57;"	d
+ELF_SHT_PROGBITS	inc/elf.h	58;"	d
+ELF_SHT_STRTAB	inc/elf.h	60;"	d
+ELF_SHT_SYMTAB	inc/elf.h	59;"	d
+ENABLE	kernel/lapic.c	19;"	d	file:
+EOI	kernel/lapic.c	17;"	d	file:
+ERROR	kernel/lapic.c	39;"	d	file:
+ESR	kernel/lapic.c	20;"	d	file:
+EXTPHYSMEM	inc/memlayout.h	93;"	d
+E_BAD_ENV	inc/error.h	/^	E_BAD_ENV	= 2,	\/\/ Environment doesn't exist or otherwise$/;"	e	enum:__anon3
+E_EOF	inc/error.h	/^	E_EOF		= 8,	\/\/ Unexpected end of file$/;"	e	enum:__anon3
+E_FAULT	inc/error.h	/^	E_FAULT		= 6,	\/\/ Memory fault$/;"	e	enum:__anon3
+E_INVAL	inc/error.h	/^	E_INVAL		= 3,	\/\/ Invalid parameter$/;"	e	enum:__anon3
+E_IPC_NOT_RECV	inc/error.h	/^	E_IPC_NOT_RECV	= 7,	\/\/ Attempt to send to env that is not recving$/;"	e	enum:__anon3
+E_NO_FREE_ENV	inc/error.h	/^	E_NO_FREE_ENV	= 5,	\/\/ Attempt to create a new environment beyond$/;"	e	enum:__anon3
+E_NO_MEM	inc/error.h	/^	E_NO_MEM	= 4,	\/\/ Request failed due to memory shortage$/;"	e	enum:__anon3
+E_UNSPECIFIED	inc/error.h	/^	E_UNSPECIFIED	= 1,	\/\/ Unspecified or unknown problem$/;"	e	enum:__anon3
+Elf	inc/elf.h	/^struct Elf {$/;"	s
+FEC_PR	inc/mmu.h	133;"	d
+FEC_U	inc/mmu.h	135;"	d
+FEC_WR	inc/mmu.h	134;"	d
+FIXED	kernel/lapic.c	31;"	d	file:
+FL_AC	inc/mmu.h	127;"	d
+FL_AF	inc/mmu.h	112;"	d
+FL_CF	inc/mmu.h	110;"	d
+FL_DF	inc/mmu.h	117;"	d
+FL_ID	inc/mmu.h	130;"	d
+FL_IF	inc/mmu.h	116;"	d
+FL_IOPL_0	inc/mmu.h	120;"	d
+FL_IOPL_1	inc/mmu.h	121;"	d
+FL_IOPL_2	inc/mmu.h	122;"	d
+FL_IOPL_3	inc/mmu.h	123;"	d
+FL_IOPL_MASK	inc/mmu.h	119;"	d
+FL_NT	inc/mmu.h	124;"	d
+FL_OF	inc/mmu.h	118;"	d
+FL_PF	inc/mmu.h	111;"	d
+FL_RF	inc/mmu.h	125;"	d
+FL_SF	inc/mmu.h	114;"	d
+FL_TF	inc/mmu.h	115;"	d
+FL_VIF	inc/mmu.h	128;"	d
+FL_VIP	inc/mmu.h	129;"	d
+FL_VM	inc/mmu.h	126;"	d
+FL_ZF	inc/mmu.h	113;"	d
+GCC_LIB	kernel/Makefile	/^GCC_LIB := $(shell $(CC) $(CFLAGS) -print-libgcc-file-name)$/;"	m
+GD_KD	inc/memlayout.h	16;"	d
+GD_KD	inc/mmu.h	15;"	d
+GD_KT	inc/memlayout.h	15;"	d
+GD_KT	inc/mmu.h	14;"	d
+GD_TSS0	inc/memlayout.h	19;"	d
+GD_TSS0	inc/mmu.h	18;"	d
+GD_UD	inc/memlayout.h	18;"	d
+GD_UD	inc/mmu.h	17;"	d
+GD_UT	inc/memlayout.h	17;"	d
+GD_UT	inc/mmu.h	16;"	d
+Gatedesc	inc/mmu.h	/^struct Gatedesc {$/;"	s
+ICRHI	kernel/lapic.c	32;"	d	file:
+ICRLO	kernel/lapic.c	21;"	d	file:
+ID	kernel/lapic.c	14;"	d	file:
+INIT	kernel/lapic.c	22;"	d	file:
+IOPHYSMEM	inc/memlayout.h	92;"	d
+IO_PIC1	kernel/picirq.h	12;"	d
+IO_PIC2	kernel/picirq.h	13;"	d
+IO_RTC	kernel/kclock.h	8;"	d
+IO_RTC	kernel/lapic.c	138;"	d	file:
+IRQ_ERROR	inc/trap.h	40;"	d
+IRQ_IDE	inc/trap.h	39;"	d
+IRQ_KBD	inc/trap.h	36;"	d
+IRQ_OFFSET	inc/trap.h	32;"	d
+IRQ_SERIAL	inc/trap.h	37;"	d
+IRQ_SLAVE	kernel/picirq.h	15;"	d
+IRQ_SPURIOUS	inc/trap.h	38;"	d
+IRQ_TIMER	inc/trap.h	35;"	d
+JOS_INC_ASSERT_H	inc/assert.h	4;"	d
+JOS_INC_CPU_H	kernel/cpu.h	3;"	d
+JOS_INC_ELF_H	inc/elf.h	2;"	d
+JOS_INC_ERROR_H	inc/error.h	4;"	d
+JOS_INC_MEMLAYOUT_H	inc/memlayout.h	2;"	d
+JOS_INC_MMU_H	inc/mmu.h	5;"	d
+JOS_INC_SPINLOCK_H	kernel/spinlock.h	2;"	d
+JOS_INC_STDARG_H	inc/stdarg.h	4;"	d
+JOS_INC_STDIO_H	inc/stdio.h	2;"	d
+JOS_INC_STRING_H	inc/string.h	2;"	d
+JOS_INC_TRAP_H	inc/trap.h	2;"	d
+JOS_INC_TYPES_H	inc/types.h	5;"	d
+JOS_INC_X86_H	inc/x86.h	5;"	d
+JOS_KERN_KCLOCK_H	kernel/kclock.h	6;"	d
+JOS_KERN_PICIRQ_H	kernel/picirq.h	4;"	d
+JOS_KERN_TRAP_H	kernel/trap.h	4;"	d
+KADDR	kernel/mem.h	21;"	d
+KBCMDP	inc/kbd.h	29;"	d
+KBC_AUXDISABLE	inc/kbd.h	32;"	d
+KBC_AUXECHO	inc/kbd.h	36;"	d
+KBC_AUXENABLE	inc/kbd.h	33;"	d
+KBC_AUXTEST	inc/kbd.h	34;"	d
+KBC_AUXWRITE	inc/kbd.h	37;"	d
+KBC_DISABLE	inc/kbd.h	66;"	d
+KBC_ECHO	inc/kbd.h	71;"	d
+KBC_ENABLE	inc/kbd.h	67;"	d
+KBC_KBDDISABLE	inc/kbd.h	40;"	d
+KBC_KBDECHO	inc/kbd.h	35;"	d
+KBC_KBDENABLE	inc/kbd.h	41;"	d
+KBC_KBDTEST	inc/kbd.h	39;"	d
+KBC_MODEIND	inc/kbd.h	70;"	d
+KBC_PULSE0	inc/kbd.h	42;"	d
+KBC_PULSE1	inc/kbd.h	43;"	d
+KBC_PULSE2	inc/kbd.h	44;"	d
+KBC_PULSE3	inc/kbd.h	45;"	d
+KBC_RAMREAD	inc/kbd.h	30;"	d
+KBC_RAMWRITE	inc/kbd.h	31;"	d
+KBC_RESEND	inc/kbd.h	64;"	d
+KBC_RESET	inc/kbd.h	63;"	d
+KBC_SELFTEST	inc/kbd.h	38;"	d
+KBC_SETDEFAULT	inc/kbd.h	65;"	d
+KBC_SETTABLE	inc/kbd.h	69;"	d
+KBC_TYPEMATIC	inc/kbd.h	68;"	d
+KBDATAP	inc/kbd.h	47;"	d
+KBD_H	inc/kbd.h	2;"	d
+KBOUTP	inc/kbd.h	48;"	d
+KBR_ACK	inc/kbd.h	76;"	d
+KBR_BREAK	inc/kbd.h	79;"	d
+KBR_ECHO	inc/kbd.h	81;"	d
+KBR_EXTENDED	inc/kbd.h	74;"	d
+KBR_FAILURE	inc/kbd.h	78;"	d
+KBR_OVERRUN	inc/kbd.h	77;"	d
+KBR_RESEND	inc/kbd.h	75;"	d
+KBR_RSTDONE	inc/kbd.h	80;"	d
+KBSTATP	inc/kbd.h	19;"	d
+KBS_DIB	inc/kbd.h	20;"	d
+KBS_IBF	inc/kbd.h	21;"	d
+KBS_NOSEC	inc/kbd.h	24;"	d
+KBS_OCMD	inc/kbd.h	23;"	d
+KBS_PERR	inc/kbd.h	27;"	d
+KBS_RERR	inc/kbd.h	26;"	d
+KBS_TERR	inc/kbd.h	25;"	d
+KBS_WARM	inc/kbd.h	22;"	d
+KC8_CPU	inc/kbd.h	57;"	d
+KC8_IGNSEC	inc/kbd.h	56;"	d
+KC8_KDISABLE	inc/kbd.h	55;"	d
+KC8_KENABLE	inc/kbd.h	59;"	d
+KC8_MDISABLE	inc/kbd.h	54;"	d
+KC8_MENABLE	inc/kbd.h	58;"	d
+KC8_TRANS	inc/kbd.h	53;"	d
+KERNBASE	inc/memlayout.h	87;"	d
+KERN_LDFLAGS	kernel/Makefile	/^KERN_LDFLAGS = -T kernel\/kern.ld$/;"	m
+KERN_OBJS	kernel/Makefile	/^KERN_OBJS = kernel\/entry.o \\$/;"	m
+KEY_DEL	inc/kbd.h	14;"	d
+KEY_DN	inc/kbd.h	8;"	d
+KEY_END	inc/kbd.h	6;"	d
+KEY_HOME	inc/kbd.h	5;"	d
+KEY_INS	inc/kbd.h	13;"	d
+KEY_LF	inc/kbd.h	9;"	d
+KEY_PGDN	inc/kbd.h	12;"	d
+KEY_PGUP	inc/kbd.h	11;"	d
+KEY_RT	inc/kbd.h	10;"	d
+KEY_UP	inc/kbd.h	7;"	d
+KSTACKTOP	inc/memlayout.h	96;"	d
+KSTKGAP	inc/memlayout.h	98;"	d
+KSTKSIZE	inc/memlayout.h	97;"	d
+K_LDCMDBYTE	inc/kbd.h	51;"	d
+K_RDCMDBYTE	inc/kbd.h	50;"	d
+LD	Makefile	/^LD	=ld$/;"	m
+LEVEL	kernel/lapic.c	27;"	d	file:
+LINT0	kernel/lapic.c	37;"	d	file:
+LINT1	kernel/lapic.c	38;"	d	file:
+MASKED	kernel/lapic.c	40;"	d	file:
+MAX	inc/types.h	52;"	d
+MAXARGS	kernel/shell.c	67;"	d	file:
+MAXARGS	user/shell.c	69;"	d	file:
+MAXERROR	inc/error.h	/^	MAXERROR$/;"	e	enum:__anon3
+MAX_IRQS	kernel/picirq.h	9;"	d
+MC_NVRAM_SIZE	kernel/kclock.h	11;"	d
+MC_NVRAM_START	kernel/kclock.h	10;"	d
+MEM_H	kernel/mem.h	2;"	d
+MIN	inc/types.h	46;"	d
+MMIOBASE	inc/memlayout.h	102;"	d
+MMIOLIM	inc/memlayout.h	101;"	d
+MPBOOTPHYS	kernel/mpentry.S	/^#define MPBOOTPHYS(s) ((s) - mpentry_start + MPENTRY_PADDR)$/;"	d
+MPBUS	kernel/mpconfig.c	67;"	d	file:
+MPENTRY_PADDR	inc/memlayout.h	142;"	d
+MPIOAPIC	kernel/mpconfig.c	68;"	d	file:
+MPIOINTR	kernel/mpconfig.c	69;"	d	file:
+MPLINTR	kernel/mpconfig.c	70;"	d	file:
+MPPROC	kernel/mpconfig.c	66;"	d	file:
+MPPROC_BOOT	kernel/mpconfig.c	63;"	d	file:
+NCOMMANDS	kernel/shell.c	21;"	d	file:
+NCOMMANDS	user/shell.c	/^const int NCOMMANDS = (sizeof(commands)\/sizeof(commands[0]));$/;"	v
+NCPU	kernel/cpu.h	11;"	d
+NM	Makefile	/^NM = nm$/;"	m
+NO	kernel/kbd.c	12;"	d	file:
+NPDENTRIES	inc/mmu.h	55;"	d
+NPTENTRIES	inc/mmu.h	56;"	d
+NR_TASKS	kernel/task.h	6;"	d
+NSYSCALLS	inc/syscall.h	/^	NSYSCALLS$/;"	e	enum:__anon2
+NULL	inc/stdio.h	7;"	d
+NULL	inc/types.h	8;"	d
+NUMLOCK	kernel/kbd.c	19;"	d	file:
+NVRAM_BASEHI	kernel/kclock.h	15;"	d
+NVRAM_BASELO	kernel/kclock.h	14;"	d
+NVRAM_CENTURY	kernel/kclock.h	26;"	d
+NVRAM_EXTHI	kernel/kclock.h	19;"	d
+NVRAM_EXTLO	kernel/kclock.h	18;"	d
+NVRAM_PEXTHI	kernel/kclock.h	23;"	d
+NVRAM_PEXTLO	kernel/kclock.h	22;"	d
+OBJCOPY	Makefile	/^OBJCOPY = objcopy$/;"	m
+OBJDIR	Makefile	/^OBJDIR = .$/;"	m
+OBJDUMP	Makefile	/^OBJDUMP = objdump$/;"	m
+OTHERS	kernel/lapic.c	29;"	d	file:
+PADDR	kernel/mem.h	17;"	d
+PCINT	kernel/lapic.c	36;"	d	file:
+PDX	inc/mmu.h	43;"	d
+PDXSHIFT	inc/mmu.h	65;"	d
+PERIODIC	kernel/lapic.c	35;"	d	file:
+PFTEMP	inc/memlayout.h	137;"	d
+PGADDR	inc/mmu.h	52;"	d
+PGNUM	inc/mmu.h	40;"	d
+PGOFF	inc/mmu.h	49;"	d
+PGSHIFT	inc/mmu.h	59;"	d
+PGSIZE	inc/mmu.h	58;"	d
+PTE_A	inc/mmu.h	73;"	d
+PTE_ADDR	inc/mmu.h	86;"	d
+PTE_AVAIL	inc/mmu.h	80;"	d
+PTE_D	inc/mmu.h	74;"	d
+PTE_G	inc/mmu.h	76;"	d
+PTE_P	inc/mmu.h	68;"	d
+PTE_PCD	inc/mmu.h	72;"	d
+PTE_PS	inc/mmu.h	75;"	d
+PTE_PWT	inc/mmu.h	71;"	d
+PTE_SYSCALL	inc/mmu.h	83;"	d
+PTE_U	inc/mmu.h	70;"	d
+PTE_W	inc/mmu.h	69;"	d
+PTSHIFT	inc/mmu.h	62;"	d
+PTSIZE	inc/mmu.h	61;"	d
+PTX	inc/mmu.h	46;"	d
+PTXSHIFT	inc/mmu.h	64;"	d
+PageInfo	inc/memlayout.h	/^struct PageInfo {$/;"	s
+Proghdr	inc/elf.h	/^struct Proghdr {$/;"	s
+Pseudodesc	inc/mmu.h	/^struct Pseudodesc {$/;"	s
+PushRegs	inc/trap.h	/^struct PushRegs {$/;"	s
+RELOC	kernel/entry.S	/^#define RELOC(x) ((x) - KERNBASE)$/;"	d
+RELOC	kernel/mpentry.S	/^#define RELOC(x) ((x) - KERNBASE)$/;"	d
+ROUNDDOWN	inc/types.h	61;"	d
+ROUNDUP	inc/types.h	67;"	d
+Runqueue	kernel/task.h	/^} Runqueue;$/;"	t	typeref:struct:__anon9
+SCROLLLOCK	kernel/kbd.c	20;"	d	file:
+SECTSIZE	boot/main.c	32;"	d	file:
+SECTSIZE	lib/readelf.c	2;"	d	file:
+SEG	inc/mmu.h	152;"	d
+SEG	inc/mmu.h	182;"	d
+SEG16	inc/mmu.h	186;"	d
+SEG_FAULT	inc/mmu.h	180;"	d
+SEG_NULL	boot/boot.S	/^SEG_NULL    # NULL segment$/;"	l
+SEG_NULL	inc/mmu.h	149;"	d
+SEG_NULL	inc/mmu.h	178;"	d
+SETCALLGATE	inc/mmu.h	306;"	d
+SETGATE	inc/mmu.h	292;"	d
+SHELL_H	inc/shell.h	2;"	d
+SHELL_HIST_MAX	inc/shell.h	4;"	d
+SHIFT	kernel/kbd.c	14;"	d	file:
+STARTUP	kernel/lapic.c	23;"	d	file:
+STA_A	inc/mmu.h	199;"	d
+STA_C	inc/mmu.h	196;"	d
+STA_E	inc/mmu.h	195;"	d
+STA_R	inc/mmu.h	198;"	d
+STA_W	inc/mmu.h	197;"	d
+STA_X	inc/mmu.h	194;"	d
+STS_CG16	inc/mmu.h	205;"	d
+STS_CG32	inc/mmu.h	211;"	d
+STS_IG16	inc/mmu.h	207;"	d
+STS_IG32	inc/mmu.h	212;"	d
+STS_LDT	inc/mmu.h	203;"	d
+STS_T16A	inc/mmu.h	202;"	d
+STS_T16B	inc/mmu.h	204;"	d
+STS_T32A	inc/mmu.h	209;"	d
+STS_T32B	inc/mmu.h	210;"	d
+STS_TG	inc/mmu.h	206;"	d
+STS_TG16	inc/mmu.h	208;"	d
+STS_TG32	inc/mmu.h	213;"	d
+SVR	kernel/lapic.c	18;"	d	file:
+SYSCALL_NOARG	lib/syscall.c	/^SYSCALL_NOARG(getcid, int32_t)$/;"	f
+SYSCALL_NOARG	lib/syscall.c	4;"	d	file:
+SYS_CALL_H	kernel/syscall.h	2;"	d
+SYS_cls	inc/syscall.h	/^  SYS_cls,$/;"	e	enum:__anon2
+SYS_fork	inc/syscall.h	/^	SYS_fork,$/;"	e	enum:__anon2
+SYS_get_num_free_page	inc/syscall.h	/^  SYS_get_num_free_page,$/;"	e	enum:__anon2
+SYS_get_num_used_page	inc/syscall.h	/^  SYS_get_num_used_page,$/;"	e	enum:__anon2
+SYS_get_ticks	inc/syscall.h	/^  SYS_get_ticks,$/;"	e	enum:__anon2
+SYS_getc	inc/syscall.h	/^	SYS_getc,$/;"	e	enum:__anon2
+SYS_getcid	inc/syscall.h	/^	SYS_getcid,$/;"	e	enum:__anon2
+SYS_getpid	inc/syscall.h	/^	SYS_getpid,$/;"	e	enum:__anon2
+SYS_kill	inc/syscall.h	/^	SYS_kill,$/;"	e	enum:__anon2
+SYS_puts	inc/syscall.h	/^	SYS_puts = 0,$/;"	e	enum:__anon2
+SYS_settextcolor	inc/syscall.h	/^  SYS_settextcolor,$/;"	e	enum:__anon2
+SYS_sleep	inc/syscall.h	/^	SYS_sleep,$/;"	e	enum:__anon2
+Secthdr	inc/elf.h	/^struct Secthdr {$/;"	s
+Segdesc	inc/mmu.h	/^struct Segdesc {$/;"	s
+TASK_FREE	kernel/task.h	/^	TASK_FREE = 0,$/;"	e	enum:__anon7
+TASK_H	kernel/task.h	2;"	d
+TASK_RUNNABLE	kernel/task.h	/^	TASK_RUNNABLE,$/;"	e	enum:__anon7
+TASK_RUNNING	kernel/task.h	/^	TASK_RUNNING,$/;"	e	enum:__anon7
+TASK_SLEEP	kernel/task.h	/^	TASK_SLEEP,$/;"	e	enum:__anon7
+TASK_STOP	kernel/task.h	/^	TASK_STOP,$/;"	e	enum:__anon7
+TCCR	kernel/lapic.c	42;"	d	file:
+TDCR	kernel/lapic.c	43;"	d	file:
+TICR	kernel/lapic.c	41;"	d	file:
+TIMER	kernel/lapic.c	33;"	d	file:
+TIMER_H	inc/timer.h	2;"	d
+TIMER_H	kernel/timer.h	2;"	d
+TIME_HZ	kernel/timer.c	9;"	d	file:
+TIME_QUANT	kernel/task.h	7;"	d
+TPR	kernel/lapic.c	16;"	d	file:
+TRAPHANDLER	kernel/trap_entry.S	/^#define TRAPHANDLER(name, num)						\\$/;"	d
+TRAPHANDLER_NOEC	kernel/trap_entry.S	/^#define TRAPHANDLER_NOEC(name, num)					\\$/;"	d
+T_ALIGN	inc/trap.h	23;"	d
+T_BOUND	inc/trap.h	11;"	d
+T_BRKPT	inc/trap.h	9;"	d
+T_DBLFLT	inc/trap.h	14;"	d
+T_DEBUG	inc/trap.h	7;"	d
+T_DEFAULT	inc/trap.h	30;"	d
+T_DEVICE	inc/trap.h	13;"	d
+T_DIVIDE	inc/trap.h	6;"	d
+T_FPERR	inc/trap.h	22;"	d
+T_GPFLT	inc/trap.h	19;"	d
+T_ILLOP	inc/trap.h	12;"	d
+T_MCHK	inc/trap.h	24;"	d
+T_NMI	inc/trap.h	8;"	d
+T_OFLOW	inc/trap.h	10;"	d
+T_PGFLT	inc/trap.h	20;"	d
+T_SEGNP	inc/trap.h	17;"	d
+T_SIMDERR	inc/trap.h	25;"	d
+T_STACK	inc/trap.h	18;"	d
+T_SYSCALL	inc/trap.h	29;"	d
+T_TSS	inc/trap.h	16;"	d
+Task	kernel/task.h	/^} Task;$/;"	t	typeref:struct:__anon8
+TaskState	kernel/task.h	/^} TaskState;$/;"	t	typeref:enum:__anon7
+TrapHandler	inc/trap.h	/^typedef void (*TrapHandler)(struct Trapframe *tf);$/;"	t
+Trapframe	inc/trap.h	/^struct Trapframe {$/;"	s
+UBSS_SZ	kernel/task.c	/^uint32_t UBSS_SZ;$/;"	v
+UDATA_SZ	kernel/task.c	/^uint32_t UDATA_SZ;$/;"	v
+UENVS	inc/memlayout.h	116;"	d
+ULIB	kernel/Makefile	/^ULIB = lib\/string.o lib\/printf.o lib\/printfmt.o lib\/readline.o lib\/console.o lib\/syscall.o$/;"	m
+ULIM	inc/memlayout.h	104;"	d
+UPAGES	inc/memlayout.h	114;"	d
+UPROG	kernel/Makefile	/^UPROG = user\/shell.o user\/main.o$/;"	m
+URODATA_SZ	kernel/task.c	/^uint32_t URODATA_SZ;$/;"	v
+USR_STACK_SIZE	kernel/task.h	19;"	d
+USR_SYSCALL_H	inc/syscall.h	2;"	d
+USTABDATA	inc/memlayout.h	139;"	d
+USTACKTOP	inc/memlayout.h	128;"	d
+UTEMP	inc/memlayout.h	134;"	d
+UTEXT	inc/memlayout.h	131;"	d
+UTEXT_SZ	kernel/task.c	/^uint32_t UTEXT_SZ;$/;"	v
+UTOP	inc/memlayout.h	123;"	d
+UTrapframe	inc/trap.h	/^struct UTrapframe {$/;"	s
+UVPT	inc/memlayout.h	112;"	d
+UXSTACKTOP	inc/memlayout.h	125;"	d
+VER	kernel/lapic.c	15;"	d	file:
+WHITESPACE	kernel/shell.c	66;"	d	file:
+WHITESPACE	user/shell.c	68;"	d	file:
+X1	kernel/lapic.c	34;"	d	file:
+__spin_initlock	kernel/spinlock.c	/^__spin_initlock(struct spinlock *lk, char *name)$/;"	f
+_alltraps	kernel/trap_entry.S	/^_alltraps:$/;"	l
+_kaddr	kernel/mem.h	/^_kaddr(const char *file, int line, physaddr_t pa)$/;"	f
+_paddr	kernel/mem.h	/^_paddr(const char *file, int line, void *kva)$/;"	f
+_panic	kernel/assert.c	/^_panic(const char *file, int line, const char *fmt,...)$/;"	f
+_start	kernel/entry.S	/^_start = RELOC(entry)$/;"	d
+_warn	kernel/assert.c	/^_warn(const char *file, int line, const char *fmt,...)$/;"	f
+apicid	kernel/mpconfig.c	/^	uint8_t apicid;                 \/\/ local APIC id$/;"	m	struct:mpproc	file:
+assert	inc/assert.h	14;"	d
+attrib	kernel/screen.c	/^int attrib = 0x0F;$/;"	v
+bool	inc/types.h	/^typedef _Bool bool;$/;"	t
+boot_alloc	kernel/mem.c	/^boot_alloc(uint32_t n)$/;"	f	file:
+boot_aps	kernel/main.c	/^boot_aps(void)$/;"	f	file:
+boot_map_region	kernel/mem.c	/^boot_map_region(pde_t *pgdir, uintptr_t va, size_t size, physaddr_t pa, int perm)$/;"	f	file:
+bootcpu	kernel/mpconfig.c	/^struct CpuInfo *bootcpu;$/;"	v	typeref:struct:CpuInfo
+bootmain	boot/main.c	/^bootmain(void)$/;"	f
+bootstack	kernel/entry.S	/^bootstack:$/;"	l
+bootstacktop	kernel/entry.S	/^bootstacktop:$/;"	l
+breakpoint	inc/x86.h	/^breakpoint(void)$/;"	f
+buf	kernel/kbd.c	/^  uint8_t buf[CONSBUFSIZE];$/;"	m	struct:__anon6	file:
+buf	lib/printf.c	/^	char buf[256];$/;"	m	struct:printbuf	file:
+buf	lib/printfmt.c	/^	char *buf;$/;"	m	struct:sprintbuf	file:
+buf	lib/readline.c	/^static char buf[BUFLEN];$/;"	v	file:
+call	boot/boot.S	/^call bootmain$/;"	l
+charcode	kernel/kbd.c	/^static uint8_t *charcode[4] = {$/;"	v	file:
+check_kern_pgdir	kernel/mem.c	/^check_kern_pgdir(void)$/;"	f	file:
+check_page	kernel/mem.c	/^check_page(void)$/;"	f	file:
+check_page_alloc	kernel/mem.c	/^check_page_alloc(void)$/;"	f	file:
+check_page_free_list	kernel/mem.c	/^check_page_free_list(bool only_low_memory)$/;"	f	file:
+check_page_installed_pgdir	kernel/mem.c	/^check_page_installed_pgdir(void)$/;"	f	file:
+check_va2pa	kernel/mem.c	/^check_va2pa(pde_t *pgdir, uintptr_t va)$/;"	f	file:
+checksum	kernel/mpconfig.c	/^	uint8_t checksum;               \/\/ all bytes must add up to 0$/;"	m	struct:mp	file:
+checksum	kernel/mpconfig.c	/^	uint8_t checksum;               \/\/ all bytes must add up to 0$/;"	m	struct:mpconf	file:
+chgcolor	kernel/shell.c	/^int chgcolor(int argc, char **argv)$/;"	f
+chgcolor	user/shell.c	/^int chgcolor(int argc, char **argv)$/;"	f
+cld	boot/boot.S	/^cld                         # String operations increment$/;"	l
+cli	boot/boot.S	/^cli                         # Disable interrupts$/;"	l
+cls	lib/syscall.c	/^int32_t cls(void) {$/;"	f
+cnt	lib/printf.c	/^	int cnt;	\/\/ total bytes printed so far$/;"	m	struct:printbuf	file:
+cnt	lib/printfmt.c	/^	int cnt;$/;"	m	struct:sprintbuf	file:
+commands	kernel/shell.c	/^static struct Command commands[] = {$/;"	v	typeref:struct:Command	file:
+commands	user/shell.c	/^struct Command commands[] = {$/;"	v	typeref:struct:Command
+cons	kernel/kbd.c	/^} cons;$/;"	v	typeref:struct:__anon6	file:
+cons_getc	kernel/kbd.c	/^cons_getc(void)$/;"	f
+cons_intr	kernel/kbd.c	/^cons_intr(int (*proc)(void))$/;"	f	file:
+cprintf	lib/printf.c	/^cprintf(const char *fmt, ...)$/;"	f
+cpu	kernel/spinlock.h	/^	struct CpuInfo *cpu;   \/\/ The CPU holding the lock.$/;"	m	struct:spinlock	typeref:struct:spinlock::CpuInfo
+cpu_id	kernel/cpu.h	/^	uint8_t cpu_id;                 \/\/ Local APIC ID; index into cpus[] below$/;"	m	struct:CpuInfo
+cpu_rq	kernel/cpu.h	/^	Runqueue cpu_rq;        \/\/ cpu runqueue$/;"	m	struct:CpuInfo
+cpu_status	kernel/cpu.h	/^	volatile unsigned cpu_status;   \/\/ The status of the CPU$/;"	m	struct:CpuInfo
+cpu_task	kernel/cpu.h	/^	Task *cpu_task;          \/\/ The currently-running task.$/;"	m	struct:CpuInfo
+cpu_tss	kernel/cpu.h	/^	struct tss_struct cpu_tss;        \/\/ Used by x86 to find stack for interrupt$/;"	m	struct:CpuInfo	typeref:struct:CpuInfo::tss_struct
+cpuid	inc/x86.h	/^cpuid(uint32_t info, uint32_t *eaxp, uint32_t *ebxp, uint32_t *ecxp, uint32_t *edxp)$/;"	f
+cpunum	kernel/lapic.c	/^cpunum(void)$/;"	f
+cpus	kernel/mpconfig.c	/^struct CpuInfo cpus[NCPU];$/;"	v	typeref:struct:CpuInfo
+cputchar	lib/console.c	/^cputchar(int ch)$/;"	f
+csr_x	kernel/screen.c	/^int csr_x = 0, csr_y = 0;$/;"	v
+csr_y	kernel/screen.c	/^int csr_x = 0, csr_y = 0;$/;"	v
+ctlmap	kernel/kbd.c	/^static uint8_t ctlmap[256] =$/;"	v	file:
+ctx_switch	kernel/sched.c	5;"	d	file:
+cur_task	kernel/task.c	/^Task *cur_task = NULL; \/\/Current running task$/;"	v
+default_trap_handler	kernel/trap.c	/^void default_trap_handler(struct Trapframe *tf)$/;"	f
+desc	inc/shell.h	/^  const char *desc;$/;"	m	struct:Command
+desc	kernel/shell.c	/^	const char *desc;$/;"	m	struct:Command	file:
+didinit	kernel/picirq.c	/^static bool didinit;$/;"	v	file:
+die	kernel/entry.S	/^die:$/;"	l
+do_getc	kernel/syscall.c	/^int32_t do_getc()$/;"	f
+do_puts	kernel/syscall.c	/^void do_puts(char *str, uint32_t len)$/;"	f
+do_syscall	kernel/syscall.c	/^int32_t do_syscall(uint32_t syscallno, uint32_t a1, uint32_t a2, uint32_t a3, uint32_t a4, uint32_t a5)$/;"	f
+e_ehsize	inc/elf.h	/^	uint16_t e_ehsize;$/;"	m	struct:Elf
+e_elf	inc/elf.h	/^	uint8_t e_elf[12];$/;"	m	struct:Elf
+e_entry	inc/elf.h	/^	uint32_t e_entry;$/;"	m	struct:Elf
+e_flags	inc/elf.h	/^	uint32_t e_flags;$/;"	m	struct:Elf
+e_machine	inc/elf.h	/^	uint16_t e_machine;$/;"	m	struct:Elf
+e_magic	inc/elf.h	/^	uint32_t e_magic;	\/\/ must equal ELF_MAGIC$/;"	m	struct:Elf
+e_phentsize	inc/elf.h	/^	uint16_t e_phentsize;$/;"	m	struct:Elf
+e_phnum	inc/elf.h	/^	uint16_t e_phnum;$/;"	m	struct:Elf
+e_phoff	inc/elf.h	/^	uint32_t e_phoff;$/;"	m	struct:Elf
+e_shentsize	inc/elf.h	/^	uint16_t e_shentsize;$/;"	m	struct:Elf
+e_shnum	inc/elf.h	/^	uint16_t e_shnum;$/;"	m	struct:Elf
+e_shoff	inc/elf.h	/^	uint32_t e_shoff;$/;"	m	struct:Elf
+e_shstrndx	inc/elf.h	/^	uint16_t e_shstrndx;$/;"	m	struct:Elf
+e_type	inc/elf.h	/^	uint16_t e_type;$/;"	m	struct:Elf
+e_version	inc/elf.h	/^	uint32_t e_version;$/;"	m	struct:Elf
+ebuf	lib/printfmt.c	/^	char *ebuf;$/;"	m	struct:sprintbuf	file:
+entries	kernel/mpconfig.c	/^	uint8_t entries[0];             \/\/ table entries$/;"	m	struct:mpconf	file:
+entry	kernel/entry.S	/^entry:$/;"	l
+entry	kernel/mpconfig.c	/^	uint16_t entry;                 \/\/ entry count$/;"	m	struct:mpconf	file:
+entry_pgdir	kernel/entrypgdir.c	/^pde_t entry_pgdir[NPDENTRIES] = {$/;"	v
+entry_pgtable	kernel/entrypgdir.c	/^pte_t entry_pgtable[NPTENTRIES] = {$/;"	v
+entry_pgtable	kernel/entrypgdir.c	/^pte_t entry_pgtable[NPTENTRIES];$/;"	v
+env_pop_tf	kernel/trap.c	/^env_pop_tf(struct Trapframe *tf)$/;"	f
+error_string	lib/printfmt.c	/^static const char * const error_string[MAXERROR] =$/;"	v	file:
+f	Makefile	/^	dd if=$(OBJDIR)\/boot\/boot of=$(OBJDIR)\/kernel.img conv=notrunc 2>\/dev\/null$/;"	m
+f	Makefile	/^	dd if=$(OBJDIR)\/kernel\/system of=$(OBJDIR)\/kernel.img seek=1 conv=notrunc 2>\/dev\/null$/;"	m
+f	Makefile	/^	dd if=\/dev\/zero of=$(OBJDIR)\/kernel.img count=10000 2>\/dev\/null$/;"	m
+false	inc/types.h	/^enum { false, true };$/;"	e	enum:__anon1
+feature	kernel/mpconfig.c	/^	uint32_t feature;               \/\/ feature flags from CPUID instruction$/;"	m	struct:mpproc	file:
+flags	kernel/mpconfig.c	/^	uint8_t flags;                  \/\/ CPU flags$/;"	m	struct:mpproc	file:
+fork	lib/syscall.c	/^int32_t fork(void) {$/;"	f
+forktest	user/shell.c	/^int forktest(int argc, char **argv)$/;"	f
+func	inc/shell.h	/^  int (*func)(int argc, char** argv);$/;"	m	struct:Command
+func	kernel/shell.c	/^	int (*func)(int argc, char** argv);$/;"	m	struct:Command	file:
+gd_args	inc/mmu.h	/^	unsigned gd_args : 5;        \/\/ # args, 0 for interrupt\/trap gates$/;"	m	struct:Gatedesc
+gd_dpl	inc/mmu.h	/^	unsigned gd_dpl : 2;         \/\/ descriptor(meaning new) privilege level$/;"	m	struct:Gatedesc
+gd_off_15_0	inc/mmu.h	/^	unsigned gd_off_15_0 : 16;   \/\/ low 16 bits of offset in segment$/;"	m	struct:Gatedesc
+gd_off_31_16	inc/mmu.h	/^	unsigned gd_off_31_16 : 16;  \/\/ high bits of offset in segment$/;"	m	struct:Gatedesc
+gd_p	inc/mmu.h	/^	unsigned gd_p : 1;           \/\/ Present$/;"	m	struct:Gatedesc
+gd_rsv1	inc/mmu.h	/^	unsigned gd_rsv1 : 3;        \/\/ reserved(should be zero I guess)$/;"	m	struct:Gatedesc
+gd_s	inc/mmu.h	/^	unsigned gd_s : 1;           \/\/ must be 0 (system)$/;"	m	struct:Gatedesc
+gd_sel	inc/mmu.h	/^	unsigned gd_sel : 16;        \/\/ segment selector$/;"	m	struct:Gatedesc
+gd_type	inc/mmu.h	/^	unsigned gd_type : 4;        \/\/ type(STS_{TG,IG32,TG32})$/;"	m	struct:Gatedesc
+gdt	boot/boot.S	/^gdt:$/;"	l
+gdt	kernel/mpentry.S	/^gdt:$/;"	l
+gdt	kernel/task.c	/^struct Segdesc gdt[NCPU + 5] =$/;"	v	typeref:struct:Segdesc
+gdt_pd	kernel/task.c	/^struct Pseudodesc gdt_pd = {$/;"	v	typeref:struct:Pseudodesc
+gdtdesc	boot/boot.S	/^gdtdesc: $/;"	l
+gdtdesc	kernel/mpentry.S	/^gdtdesc:$/;"	l
+get_caller_pcs	kernel/spinlock.c	/^get_caller_pcs(uint32_t pcs[])$/;"	f	file:
+get_num_free_page	lib/syscall.c	/^int32_t get_num_free_page(void) {$/;"	f
+get_num_used_page	lib/syscall.c	/^int32_t get_num_used_page(void){$/;"	f
+get_ticks	lib/syscall.c	/^unsigned long get_ticks(void) {$/;"	f
+getchar	lib/console.c	/^getchar(void)$/;"	f
+getint	lib/printfmt.c	/^getint(va_list *ap, int lflag)$/;"	f	file:
+getpid	lib/syscall.c	/^int32_t getpid(void) {$/;"	f
+getuint	lib/printfmt.c	/^getuint(va_list *ap, int lflag)$/;"	f	file:
+hist	user/shell.c	/^char hist[SHELL_HIST_MAX][BUF_LEN];$/;"	v
+hist_curr	user/shell.c	/^int hist_curr;$/;"	v
+hist_head	user/shell.c	/^int hist_head;$/;"	v
+hist_tail	user/shell.c	/^int hist_tail;$/;"	v
+holding	kernel/spinlock.c	/^holding(struct spinlock *lock)$/;"	f	file:
+i386_detect_memory	kernel/mem.c	/^i386_detect_memory(void)$/;"	f	file:
+idle_entry	user/main.c	/^int idle_entry()$/;"	f
+idt	kernel/trap.c	/^struct Gatedesc idt[256] = { { 0 } };$/;"	v	typeref:struct:Gatedesc
+idt_pd	kernel/trap.c	/^struct Pseudodesc idt_pd = {$/;"	v	typeref:struct:Pseudodesc
+idx	lib/printf.c	/^	int idx;	\/\/ current buffer index$/;"	m	struct:printbuf	file:
+imcrp	kernel/mpconfig.c	/^	uint8_t imcrp;$/;"	m	struct:mp	file:
+inb	inc/x86.h	/^inb(int port)$/;"	f
+init_video	kernel/screen.c	/^void init_video(void)$/;"	f
+inl	inc/x86.h	/^inl(int port)$/;"	f
+insb	inc/x86.h	/^insb(int port, void *addr, int cnt)$/;"	f
+insl	inc/x86.h	/^insl(int port, void *addr, int cnt)$/;"	f
+insw	inc/x86.h	/^insw(int port, void *addr, int cnt)$/;"	f
+int16_t	inc/types.h	/^typedef short int16_t;$/;"	t
+int32_t	inc/types.h	/^typedef int int32_t;$/;"	t
+int64_t	inc/types.h	/^typedef long long int64_t;$/;"	t
+int8_t	inc/types.h	/^typedef __signed char int8_t;$/;"	t
+intptr_t	inc/types.h	/^typedef int32_t intptr_t;$/;"	t
+invlpg	inc/x86.h	/^invlpg(void *addr)$/;"	f
+inw	inc/x86.h	/^inw(int port)$/;"	f
+irq_mask_8259A	kernel/picirq.c	/^uint16_t irq_mask_8259A = 0xFFFF & ~(1<<IRQ_SLAVE);$/;"	v
+irq_setmask_8259A	kernel/picirq.c	/^irq_setmask_8259A(uint16_t mask)$/;"	f
+is_found	lib/readline.c	/^static int is_found;$/;"	v	file:
+is_tab	lib/readline.c	/^static int is_tab;$/;"	v	file:
+ismp	kernel/mpconfig.c	/^int ismp;$/;"	v
+jiffies	kernel/timer.c	/^static unsigned long jiffies = 0;$/;"	v	file:
+jmp	boot/boot.S	/^jmp loop$/;"	l
+k_getc	kernel/kbd.c	/^int k_getc(void)$/;"	f
+k_putch	kernel/screen.c	/^void k_putch(unsigned char c)$/;"	f
+k_puts	kernel/screen.c	/^void k_puts(unsigned char *text)$/;"	f
+kbd_init	kernel/kbd.c	/^void kbd_init(void)$/;"	f
+kbd_intr	kernel/kbd.c	/^kbd_intr(struct Trapframe *tf)$/;"	f
+kbd_proc_data	kernel/kbd.c	/^kbd_proc_data(void)$/;"	f	file:
+kern_pgdir	kernel/mem.c	/^pde_t                    *kern_pgdir;		\/\/ Kernel's initial page directory$/;"	v
+kernel_main	kernel/main.c	/^void kernel_main(void)$/;"	f
+kgdt	kernel/entry.S	/^kgdt:$/;"	l
+kgdtdesc	kernel/entry.S	/^kgdtdesc:$/;"	l
+kill_self	lib/syscall.c	/^void kill_self() {$/;"	f
+lapic	kernel/lapic.c	/^volatile uint32_t *lapic;$/;"	v
+lapic_eoi	kernel/lapic.c	/^lapic_eoi(void)$/;"	f
+lapic_init	kernel/lapic.c	/^lapic_init(void)$/;"	f
+lapic_ipi	kernel/lapic.c	/^lapic_ipi(int vector)$/;"	f
+lapic_startap	kernel/lapic.c	/^lapic_startap(uint8_t apicid, uint32_t addr)$/;"	f
+lapicaddr	kernel/lapic.c	/^physaddr_t lapicaddr;        \/\/ Initialized in mpconfig.c$/;"	v
+lapicaddr	kernel/mpconfig.c	/^	physaddr_t lapicaddr;           \/\/ address of local APIC$/;"	m	struct:mpconf	file:
+lapicw	kernel/lapic.c	/^lapicw(int index, int value)$/;"	f	file:
+last_tf	kernel/trap.c	/^static struct Trapframe *last_tf;$/;"	v	typeref:struct:Trapframe	file:
+lcr0	inc/x86.h	/^lcr0(uint32_t val)$/;"	f
+lcr3	inc/x86.h	/^lcr3(uint32_t val)$/;"	f
+lcr4	inc/x86.h	/^lcr4(uint32_t val)$/;"	f
+length	kernel/mpconfig.c	/^	uint16_t length;                \/\/ total table length$/;"	m	struct:mpconf	file:
+length	kernel/mpconfig.c	/^	uint8_t length;                 \/\/ 1$/;"	m	struct:mp	file:
+lgdt	boot/boot.S	/^lgdt    gdtdesc$/;"	l
+lgdt	inc/x86.h	/^lgdt(void *p)$/;"	f
+lidt	inc/x86.h	/^lidt(void *p)$/;"	f
+ljmp	boot/boot.S	/^ljmp    $PROT_MODE_CSEG, $protcseg$/;"	l
+lldt	inc/x86.h	/^lldt(uint16_t sel)$/;"	f
+load_from_pa	lib/readelf.c	/^void load_from_pa(uint32_t ELFHDR)$/;"	f
+locked	kernel/spinlock.h	/^	unsigned locked;       \/\/ Is the lock held?$/;"	m	struct:spinlock
+loop	boot/boot.S	/^loop:$/;"	l
+ltr	inc/x86.h	/^ltr(uint16_t sel)$/;"	f
+mc146818_read	kernel/kclock.c	/^mc146818_read(unsigned reg)$/;"	f
+mc146818_write	kernel/kclock.c	/^mc146818_write(unsigned reg, unsigned datum)$/;"	f
+mem_init	kernel/mem.c	/^mem_init(void)$/;"	f
+mem_init_mp	kernel/mem.c	/^mem_init_mp(void)$/;"	f	file:
+mem_stat	user/shell.c	/^int mem_stat(int argc, char **argv)$/;"	f
+memcmp	lib/string.c	/^memcmp(const void *v1, const void *v2, size_t n)$/;"	f
+memcpy	lib/string.c	/^memcpy(void *dst, const void *src, size_t n)$/;"	f
+memfind	lib/string.c	/^memfind(const void *s, int c, size_t n)$/;"	f
+memmove	lib/string.c	/^memmove(void *dst, const void *src, size_t n)$/;"	f
+memset	lib/string.c	/^memset(void *v, int c, size_t n)$/;"	f
+microdelay	kernel/lapic.c	/^microdelay(int us)$/;"	f	file:
+mmio_map_region	kernel/mem.c	/^mmio_map_region(physaddr_t pa, size_t size)$/;"	f
+mon_help	kernel/shell.c	/^int mon_help(int argc, char **argv)$/;"	f
+mon_help	user/shell.c	/^int mon_help(int argc, char **argv)$/;"	f
+mon_kerninfo	kernel/shell.c	/^int mon_kerninfo(int argc, char **argv)$/;"	f
+move_csr	kernel/screen.c	/^void move_csr(void)$/;"	f
+movl	boot/boot.S	/^movl    $start, %esp$/;"	l
+movl	boot/boot.S	/^movl    %cr0, %eax$/;"	l
+movl	boot/boot.S	/^movl    %eax, %cr0$/;"	l
+movw	boot/boot.S	/^movw    $PROT_MODE_DSEG, %ax    # Our data segment selector$/;"	l
+movw	boot/boot.S	/^movw    %ax, %ds                # -> DS: Data Segment$/;"	l
+movw	boot/boot.S	/^movw    %ax, %es                # -> ES: Extra Segment$/;"	l
+movw	boot/boot.S	/^movw    %ax, %fs                # -> FS$/;"	l
+movw	boot/boot.S	/^movw    %ax, %gs                # -> GS$/;"	l
+movw	boot/boot.S	/^movw    %ax, %ss                # -> SS: Stack Segment$/;"	l
+movw	boot/boot.S	/^movw    %ax,%ds             # -> Data Segment$/;"	l
+movw	boot/boot.S	/^movw    %ax,%es             # -> Extra Segment$/;"	l
+movw	boot/boot.S	/^movw    %ax,%ss             # -> Stack Segment$/;"	l
+mp	kernel/mpconfig.c	/^struct mp {             \/\/ floating pointer [MP 4.1]$/;"	s	file:
+mp_init	kernel/mpconfig.c	/^mp_init(void)$/;"	f
+mp_main	kernel/main.c	/^mp_main(void)$/;"	f
+mpconf	kernel/mpconfig.c	/^struct mpconf {         \/\/ configuration table header [MP 4.2]$/;"	s	file:
+mpconfig	kernel/mpconfig.c	/^mpconfig(struct mp **pmp)$/;"	f	file:
+mpentry_end	kernel/mpentry.S	/^mpentry_end:$/;"	l
+mpentry_kstack	kernel/main.c	/^void *mpentry_kstack;$/;"	v
+mpentry_start	kernel/mpentry.S	/^mpentry_start:$/;"	l
+mpproc	kernel/mpconfig.c	/^struct mpproc {         \/\/ processor table entry [MP 4.3.1]$/;"	s	file:
+mpsearch	kernel/mpconfig.c	/^mpsearch(void)$/;"	f	file:
+mpsearch1	kernel/mpconfig.c	/^mpsearch1(physaddr_t a, int len)$/;"	f	file:
+name	inc/shell.h	/^  const char *name;$/;"	m	struct:Command
+name	kernel/shell.c	/^	const char *name;$/;"	m	struct:Command	file:
+name	kernel/spinlock.h	/^	char *name;            \/\/ Name of lock.$/;"	m	struct:spinlock
+name	kernel/trap_entry.S	/^	name:								\\$/;"	l
+name	kernel/trap_entry.S	/^	name:			\/* function starts here *\/		\\$/;"	l
+ncpu	kernel/mpconfig.c	/^int ncpu;$/;"	v
+nextfree	kernel/mem.c	/^static char              *nextfree;	\/\/ virtual address of next byte of free memory$/;"	v	file:
+normalmap	kernel/kbd.c	/^static uint8_t normalmap[256] =$/;"	v	file:
+npages	kernel/mem.c	/^size_t                   npages;			\/\/ Amount of physical memory (in pages)$/;"	v
+npages_basemem	kernel/mem.c	/^static size_t            npages_basemem;	\/\/ Amount of base memory (in pages)$/;"	v	file:
+num_free_pages	kernel/mem.c	/^size_t                   num_free_pages;$/;"	v
+nvram_read	kernel/mem.c	/^nvram_read(int r)$/;"	f	file:
+oemlength	kernel/mpconfig.c	/^	uint16_t oemlength;             \/\/ OEM table length$/;"	m	struct:mpconf	file:
+oemtable	kernel/mpconfig.c	/^	physaddr_t oemtable;            \/\/ OEM table pointer$/;"	m	struct:mpconf	file:
+off_t	inc/types.h	/^typedef int32_t off_t;$/;"	t
+offsetof	inc/types.h	74;"	d
+orl	boot/boot.S	/^orl     $CR0_PE_ON, %eax$/;"	l
+outb	inc/x86.h	/^outb(int port, uint8_t data)$/;"	f
+outl	inc/x86.h	/^outl(int port, uint32_t data)$/;"	f
+outsb	inc/x86.h	/^outsb(int port, const void *addr, int cnt)$/;"	f
+outsl	inc/x86.h	/^outsl(int port, const void *addr, int cnt)$/;"	f
+outsw	inc/x86.h	/^outsw(int port, const void *addr, int cnt)$/;"	f
+outw	inc/x86.h	/^outw(int port, uint16_t data)$/;"	f
+p_align	inc/elf.h	/^	uint32_t p_align;$/;"	m	struct:Proghdr
+p_filesz	inc/elf.h	/^	uint32_t p_filesz;$/;"	m	struct:Proghdr
+p_flags	inc/elf.h	/^	uint32_t p_flags;$/;"	m	struct:Proghdr
+p_memsz	inc/elf.h	/^	uint32_t p_memsz;$/;"	m	struct:Proghdr
+p_offset	inc/elf.h	/^	uint32_t p_offset;$/;"	m	struct:Proghdr
+p_pa	inc/elf.h	/^	uint32_t p_pa;$/;"	m	struct:Proghdr
+p_type	inc/elf.h	/^	uint32_t p_type;$/;"	m	struct:Proghdr
+p_va	inc/elf.h	/^	uint32_t p_va;$/;"	m	struct:Proghdr
+pa2page	kernel/mem.h	/^pa2page(physaddr_t pa)$/;"	f
+page2kva	kernel/mem.h	/^page2kva(struct PageInfo *pp)$/;"	f
+page2pa	kernel/mem.h	/^page2pa(struct PageInfo *pp)$/;"	f
+page_alloc	kernel/mem.c	/^page_alloc(int alloc_flags)$/;"	f
+page_decref	kernel/mem.c	/^page_decref(struct PageInfo* pp)$/;"	f
+page_fault_handler	kernel/trap.c	/^void page_fault_handler(struct Trapframe *tf)$/;"	f
+page_free	kernel/mem.c	/^page_free(struct PageInfo *pp)$/;"	f
+page_free_list	kernel/mem.c	/^static struct PageInfo   *page_free_list;	\/\/ Free list of physical pages$/;"	v	typeref:struct:PageInfo	file:
+page_init	kernel/mem.c	/^page_init(void)$/;"	f
+page_insert	kernel/mem.c	/^page_insert(pde_t *pgdir, struct PageInfo *pp, void *va, int perm)$/;"	f
+page_lookup	kernel/mem.c	/^page_lookup(pde_t *pgdir, void *va, pte_t **pte_store)$/;"	f
+page_remove	kernel/mem.c	/^page_remove(pde_t *pgdir, void *va)$/;"	f
+pages	kernel/mem.c	/^struct PageInfo          *pages;		\/\/ Physical page state array$/;"	v	typeref:struct:PageInfo
+panic	inc/assert.h	12;"	d
+panicstr	kernel/assert.c	/^const char *panicstr;$/;"	v
+parent_id	kernel/task.h	/^	int parent_id;$/;"	m	struct:__anon8
+pcs	kernel/spinlock.h	/^	uintptr_t pcs[10];     \/\/ The call stack (an array of program counters)$/;"	m	struct:spinlock
+pd_base	inc/mmu.h	/^	uint32_t pd_base;		\/\/ Base address$/;"	m	struct:Pseudodesc
+pd_lim	inc/mmu.h	/^	uint16_t pd_lim;		\/\/ Limit$/;"	m	struct:Pseudodesc
+pde_t	inc/memlayout.h	/^typedef uint32_t pde_t;$/;"	t
+percpu_kstacks	kernel/mpconfig.c	/^unsigned char percpu_kstacks[NCPU][KSTKSIZE]$/;"	v
+pgdir	kernel/task.h	/^  pde_t *pgdir;  \/\/Per process Page Directory$/;"	m	struct:__anon8
+pgdir_remove	kernel/mem.c	/^pgdir_remove(pde_t *pgdir)$/;"	f
+pgdir_walk	kernel/mem.c	/^pgdir_walk(pde_t *pgdir, const void *va, int create)$/;"	f
+physaddr	kernel/mpconfig.c	/^	physaddr_t physaddr;            \/\/ phys addr of MP config table$/;"	m	struct:mp	file:
+physaddr_t	inc/types.h	/^typedef uint32_t physaddr_t;$/;"	t
+pic_init	kernel/picirq.c	/^pic_init(void)$/;"	f
+pp_link	inc/memlayout.h	/^	struct PageInfo *pp_link;$/;"	m	struct:PageInfo	typeref:struct:PageInfo::PageInfo
+pp_ref	inc/memlayout.h	/^	uint16_t pp_ref;$/;"	m	struct:PageInfo
+ppn_t	inc/types.h	/^typedef uint32_t ppn_t;$/;"	t
+print_regs	kernel/trap.c	/^print_regs(struct PushRegs *regs)$/;"	f
+print_tick	kernel/shell.c	/^int print_tick(int argc, char **argv)$/;"	f
+print_tick	user/shell.c	/^int print_tick(int argc, char **argv)$/;"	f
+print_trapframe	kernel/trap.c	/^print_trapframe(struct Trapframe *tf)$/;"	f
+printbuf	lib/printf.c	/^struct printbuf {$/;"	s	file:
+printfmt	lib/printfmt.c	/^printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...)$/;"	f
+printk	kernel/printf.c	/^printk(const char *fmt, ...)$/;"	f
+printnum	lib/printfmt.c	/^printnum(void (*putch)(int, void*), void *putdat,$/;"	f	file:
+product	kernel/mpconfig.c	/^	uint8_t product[20];            \/\/ product id$/;"	m	struct:mpconf	file:
+protcseg	boot/boot.S	/^protcseg:$/;"	l
+ptable_remove	kernel/mem.c	/^ptable_remove(pde_t *pgdir)$/;"	f
+pte_t	inc/memlayout.h	/^typedef uint32_t pte_t;$/;"	t
+putch	kernel/printf.c	/^putch(int ch, int *cnt)$/;"	f	file:
+putch	lib/printf.c	/^putch(int ch, struct printbuf *b)$/;"	f	file:
+rcr0	inc/x86.h	/^rcr0(void)$/;"	f
+rcr2	inc/x86.h	/^rcr2(void)$/;"	f
+rcr3	inc/x86.h	/^rcr3(void)$/;"	f
+rcr4	inc/x86.h	/^rcr4(void)$/;"	f
+read_ebp	inc/x86.h	/^read_ebp(void)$/;"	f
+read_eflags	inc/x86.h	/^read_eflags(void)$/;"	f
+read_esp	inc/x86.h	/^read_esp(void)$/;"	f
+read_tsc	inc/x86.h	/^read_tsc(void)$/;"	f
+readline	lib/readline.c	/^char *readline(const char *prompt)$/;"	f
+readsect	boot/main.c	/^readsect(void *dst, uint32_t offset)$/;"	f
+readseg	boot/main.c	/^readseg(uint32_t pa, uint32_t count, uint32_t offset)$/;"	f
+reg_eax	inc/trap.h	/^	uint32_t reg_eax;$/;"	m	struct:PushRegs
+reg_ebp	inc/trap.h	/^	uint32_t reg_ebp;$/;"	m	struct:PushRegs
+reg_ebx	inc/trap.h	/^	uint32_t reg_ebx;$/;"	m	struct:PushRegs
+reg_ecx	inc/trap.h	/^	uint32_t reg_ecx;$/;"	m	struct:PushRegs
+reg_edi	inc/trap.h	/^	uint32_t reg_edi;$/;"	m	struct:PushRegs
+reg_edx	inc/trap.h	/^	uint32_t reg_edx;$/;"	m	struct:PushRegs
+reg_esi	inc/trap.h	/^	uint32_t reg_esi;$/;"	m	struct:PushRegs
+reg_oesp	inc/trap.h	/^	uint32_t reg_oesp;		\/* Useless *\/$/;"	m	struct:PushRegs
+register_handler	kernel/trap.c	/^void register_handler(int trapno, TrapHandler hnd, void (*trap_entry)(void), int isTrap, int dpl)$/;"	f
+relocated	kernel/entry.S	/^relocated:$/;"	l
+remind_ticks	kernel/task.h	/^	int32_t remind_ticks;$/;"	m	struct:__anon8
+reserved	kernel/mpconfig.c	/^	uint8_t reserved;$/;"	m	struct:mpconf	file:
+reserved	kernel/mpconfig.c	/^	uint8_t reserved[3];$/;"	m	struct:mp	file:
+reserved	kernel/mpconfig.c	/^	uint8_t reserved[8];$/;"	m	struct:mpproc	file:
+rpos	kernel/kbd.c	/^  uint32_t rpos;$/;"	m	struct:__anon6	file:
+runcmd	kernel/shell.c	/^static int runcmd(char *buf)$/;"	f	file:
+runcmd	user/shell.c	/^static int runcmd(char *buf)$/;"	f	file:
+sched_yield	kernel/sched.c	/^void sched_yield(void)$/;"	f
+scroll	kernel/screen.c	/^void scroll(void)$/;"	f
+sd_avl	inc/mmu.h	/^	unsigned sd_avl : 1;        \/\/ Unused (available for software use)$/;"	m	struct:Segdesc
+sd_base_15_0	inc/mmu.h	/^	unsigned sd_base_15_0 : 16; \/\/ Low bits of segment base address$/;"	m	struct:Segdesc
+sd_base_23_16	inc/mmu.h	/^	unsigned sd_base_23_16 : 8; \/\/ Middle bits of segment base address$/;"	m	struct:Segdesc
+sd_base_31_24	inc/mmu.h	/^	unsigned sd_base_31_24 : 8; \/\/ High bits of segment base address$/;"	m	struct:Segdesc
+sd_db	inc/mmu.h	/^	unsigned sd_db : 1;         \/\/ 0 = 16-bit segment, 1 = 32-bit segment$/;"	m	struct:Segdesc
+sd_dpl	inc/mmu.h	/^	unsigned sd_dpl : 2;        \/\/ Descriptor Privilege Level$/;"	m	struct:Segdesc
+sd_g	inc/mmu.h	/^	unsigned sd_g : 1;          \/\/ Granularity: limit scaled by 4K when set$/;"	m	struct:Segdesc
+sd_lim_15_0	inc/mmu.h	/^	unsigned sd_lim_15_0 : 16;  \/\/ Low bits of segment limit$/;"	m	struct:Segdesc
+sd_lim_19_16	inc/mmu.h	/^	unsigned sd_lim_19_16 : 4;  \/\/ High bits of segment limit$/;"	m	struct:Segdesc
+sd_p	inc/mmu.h	/^	unsigned sd_p : 1;          \/\/ Present$/;"	m	struct:Segdesc
+sd_rsv1	inc/mmu.h	/^	unsigned sd_rsv1 : 1;       \/\/ Reserved$/;"	m	struct:Segdesc
+sd_s	inc/mmu.h	/^	unsigned sd_s : 1;          \/\/ 0 = system, 1 = application$/;"	m	struct:Segdesc
+sd_type	inc/mmu.h	/^	unsigned sd_type : 4;       \/\/ Segment type (see STS_ constants)$/;"	m	struct:Segdesc
+set_timer	kernel/timer.c	/^void set_timer(int hz)$/;"	f
+settextcolor	lib/syscall.c	/^void settextcolor(unsigned char forecolor, unsigned char backcolor) {$/;"	f
+setupkvm	kernel/mem.c	/^setupkvm()$/;"	f
+setupvm	kernel/mem.c	/^setupvm(pde_t *pgdir, uint32_t start, uint32_t size)$/;"	f
+sh_addr	inc/elf.h	/^	uint32_t sh_addr;$/;"	m	struct:Secthdr
+sh_addralign	inc/elf.h	/^	uint32_t sh_addralign;$/;"	m	struct:Secthdr
+sh_entsize	inc/elf.h	/^	uint32_t sh_entsize;$/;"	m	struct:Secthdr
+sh_flags	inc/elf.h	/^	uint32_t sh_flags;$/;"	m	struct:Secthdr
+sh_info	inc/elf.h	/^	uint32_t sh_info;$/;"	m	struct:Secthdr
+sh_link	inc/elf.h	/^	uint32_t sh_link;$/;"	m	struct:Secthdr
+sh_name	inc/elf.h	/^	uint32_t sh_name;$/;"	m	struct:Secthdr
+sh_offset	inc/elf.h	/^	uint32_t sh_offset;$/;"	m	struct:Secthdr
+sh_size	inc/elf.h	/^	uint32_t sh_size;$/;"	m	struct:Secthdr
+sh_type	inc/elf.h	/^	uint32_t sh_type;$/;"	m	struct:Secthdr
+shell	kernel/shell.c	/^void shell()$/;"	f
+shell	user/shell.c	/^void shell()$/;"	f
+shiftcode	kernel/kbd.c	/^static uint8_t shiftcode[256] =$/;"	v	file:
+shiftmap	kernel/kbd.c	/^static uint8_t shiftmap[256] =$/;"	v	file:
+signature	kernel/mpconfig.c	/^	uint8_t signature[4];           \/\/ "PCMP"$/;"	m	struct:mpconf	file:
+signature	kernel/mpconfig.c	/^	uint8_t signature[4];           \/\/ "_MP_"$/;"	m	struct:mp	file:
+signature	kernel/mpconfig.c	/^	uint8_t signature[4];           \/\/ CPU signature$/;"	m	struct:mpproc	file:
+size_t	inc/types.h	/^typedef uint32_t size_t;$/;"	t
+sleep	lib/syscall.c	/^void sleep(uint32_t ticks) {$/;"	f
+snprintf	lib/printfmt.c	/^snprintf(char *buf, int n, const char *fmt, ...)$/;"	f
+specrev	kernel/mpconfig.c	/^	uint8_t specrev;                \/\/ [14]$/;"	m	struct:mp	file:
+spin	kernel/mpentry.S	/^spin:$/;"	l
+spin_initlock	kernel/spinlock.h	26;"	d
+spin_lock	kernel/spinlock.c	/^spin_lock(struct spinlock *lk)$/;"	f
+spin_unlock	kernel/spinlock.c	/^spin_unlock(struct spinlock *lk)$/;"	f
+spinlock	kernel/spinlock.h	/^struct spinlock {$/;"	s
+spinlocktest	user/shell.c	/^int spinlocktest(int argc, char **argv)$/;"	f
+sprintbuf	lib/printfmt.c	/^struct sprintbuf {$/;"	s	file:
+sprintputch	lib/printfmt.c	/^sprintputch(int ch, struct sprintbuf *b)$/;"	f	file:
+ssize_t	inc/types.h	/^typedef int32_t ssize_t;$/;"	t
+start	boot/boot.S	/^start:$/;"	l
+start32	kernel/mpentry.S	/^start32:$/;"	l
+state	kernel/task.h	/^	TaskState state;	\/\/Task state$/;"	m	struct:__anon8
+static_assert	inc/assert.h	18;"	d
+strcat	lib/string.c	/^strcat(char *dst, const char *src)$/;"	f
+strchr	lib/string.c	/^strchr(const char *s, char c)$/;"	f
+strcmp	lib/string.c	/^strcmp(const char *p, const char *q)$/;"	f
+strcpy	lib/string.c	/^strcpy(char *dst, const char *src)$/;"	f
+strfind	lib/string.c	/^strfind(const char *s, char c)$/;"	f
+strlcpy	lib/string.c	/^strlcpy(char *dst, const char *src, size_t size)$/;"	f
+strlen	lib/string.c	/^strlen(const char *s)$/;"	f
+strncmp	lib/string.c	/^strncmp(const char *p, const char *q, size_t n)$/;"	f
+strncpy	lib/string.c	/^strncpy(char *dst, const char *src, size_t size) {$/;"	f
+strnlen	lib/string.c	/^strnlen(const char *s, size_t size)$/;"	f
+strtol	lib/string.c	/^strtol(const char *s, char **endptr, int base)$/;"	f
+sum	kernel/mpconfig.c	/^sum(void *addr, int len)$/;"	f	file:
+sys_cls	kernel/screen.c	/^void sys_cls()$/;"	f
+sys_fork	kernel/task.c	/^int sys_fork()$/;"	f
+sys_get_num_free_page	kernel/mem.c	/^sys_get_num_free_page(void)$/;"	f
+sys_get_num_used_page	kernel/mem.c	/^sys_get_num_used_page(void)$/;"	f
+sys_get_ticks	kernel/timer.c	/^unsigned long sys_get_ticks()$/;"	f
+sys_kill	kernel/task.c	/^void sys_kill(int pid)$/;"	f
+sys_settextcolor	kernel/screen.c	/^void sys_settextcolor(unsigned char forecolor, unsigned char backcolor)$/;"	f
+syscall	lib/syscall.c	/^syscall(int num, uint32_t a1, uint32_t a2, uint32_t a3, uint32_t a4, uint32_t a5)$/;"	f	file:
+syscall_handler	kernel/syscall.c	/^static void syscall_handler(struct Trapframe *tf)$/;"	f	file:
+syscall_init	kernel/syscall.c	/^void syscall_init()$/;"	f
+tab_idx	lib/readline.c	/^static int tab_idx;$/;"	v	file:
+task_create	kernel/task.c	/^int task_create()$/;"	f
+task_free	kernel/task.c	/^static void task_free(int pid)$/;"	f	file:
+task_id	kernel/task.h	/^	int task_id;$/;"	m	struct:__anon8
+task_init	kernel/task.c	/^void task_init()$/;"	f
+task_init_percpu	kernel/task.c	/^void task_init_percpu()$/;"	f
+task_job	user/shell.c	/^void task_job()$/;"	f
+tasks	kernel/task.c	/^Task tasks[NR_TASKS];$/;"	v
+textmemptr	kernel/screen.c	/^unsigned short *textmemptr;$/;"	v
+tf	kernel/task.h	/^	struct Trapframe tf; \/\/Saved registers$/;"	m	struct:__anon8	typeref:struct:__anon8::Trapframe
+tf_cs	inc/trap.h	/^	uint16_t tf_cs;$/;"	m	struct:Trapframe
+tf_ds	inc/trap.h	/^	uint16_t tf_ds;$/;"	m	struct:Trapframe
+tf_eflags	inc/trap.h	/^	uint32_t tf_eflags;$/;"	m	struct:Trapframe
+tf_eip	inc/trap.h	/^	uintptr_t tf_eip;$/;"	m	struct:Trapframe
+tf_err	inc/trap.h	/^	uint32_t tf_err;$/;"	m	struct:Trapframe
+tf_es	inc/trap.h	/^	uint16_t tf_es;$/;"	m	struct:Trapframe
+tf_esp	inc/trap.h	/^	uintptr_t tf_esp;$/;"	m	struct:Trapframe
+tf_padding1	inc/trap.h	/^	uint16_t tf_padding1;$/;"	m	struct:Trapframe
+tf_padding2	inc/trap.h	/^	uint16_t tf_padding2;$/;"	m	struct:Trapframe
+tf_padding3	inc/trap.h	/^	uint16_t tf_padding3;$/;"	m	struct:Trapframe
+tf_padding4	inc/trap.h	/^	uint16_t tf_padding4;$/;"	m	struct:Trapframe
+tf_regs	inc/trap.h	/^	struct PushRegs tf_regs;$/;"	m	struct:Trapframe	typeref:struct:Trapframe::PushRegs
+tf_ss	inc/trap.h	/^	uint16_t tf_ss;$/;"	m	struct:Trapframe
+tf_trapno	inc/trap.h	/^	uint32_t tf_trapno;$/;"	m	struct:Trapframe
+thiscpu	kernel/cpu.h	39;"	d
+timer_handler	kernel/timer.c	/^void timer_handler(struct Trapframe *tf)$/;"	f
+timer_init	kernel/timer.c	/^void timer_init()$/;"	f
+tlb_invalidate	kernel/mem.c	/^tlb_invalidate(pde_t *pgdir, void *va)$/;"	f
+tlbflush	inc/x86.h	/^tlbflush(void)$/;"	f
+togglecode	kernel/kbd.c	/^static uint8_t togglecode[256] =$/;"	v	file:
+trap_dispatch	kernel/trap.c	/^trap_dispatch(struct Trapframe *tf)$/;"	f	file:
+trap_hnd	kernel/trap.c	/^TrapHandler trap_hnd[256] = { 0 };$/;"	v
+trap_init	kernel/trap.c	/^void trap_init()$/;"	f
+trapname	kernel/trap.c	/^static const char *trapname(int trapno)$/;"	f	file:
+trapret	kernel/trap_entry.S	/^trapret:$/;"	l
+true	inc/types.h	/^enum { false, true };$/;"	e	enum:__anon1
+ts_cr3	inc/mmu.h	/^	physaddr_t ts_cr3;	\/\/ Page directory base$/;"	m	struct:tss_struct
+ts_cs	inc/mmu.h	/^	uint16_t ts_cs;$/;"	m	struct:tss_struct
+ts_ds	inc/mmu.h	/^	uint16_t ts_ds;$/;"	m	struct:tss_struct
+ts_eax	inc/mmu.h	/^	uint32_t ts_eax;	\/\/ More saved state (registers)$/;"	m	struct:tss_struct
+ts_ebp	inc/mmu.h	/^	uintptr_t ts_ebp;$/;"	m	struct:tss_struct
+ts_ebx	inc/mmu.h	/^	uint32_t ts_ebx;$/;"	m	struct:tss_struct
+ts_ecx	inc/mmu.h	/^	uint32_t ts_ecx;$/;"	m	struct:tss_struct
+ts_edi	inc/mmu.h	/^	uint32_t ts_edi;$/;"	m	struct:tss_struct
+ts_edx	inc/mmu.h	/^	uint32_t ts_edx;$/;"	m	struct:tss_struct
+ts_eflags	inc/mmu.h	/^	uint32_t ts_eflags;$/;"	m	struct:tss_struct
+ts_eip	inc/mmu.h	/^	uintptr_t ts_eip;	\/\/ Saved state from last task switch$/;"	m	struct:tss_struct
+ts_es	inc/mmu.h	/^	uint16_t ts_es;		\/\/ Even more saved state (segment selectors)$/;"	m	struct:tss_struct
+ts_esi	inc/mmu.h	/^	uint32_t ts_esi;$/;"	m	struct:tss_struct
+ts_esp	inc/mmu.h	/^	uintptr_t ts_esp;$/;"	m	struct:tss_struct
+ts_esp0	inc/mmu.h	/^	uintptr_t ts_esp0;	\/\/ Stack pointers and segment selectors$/;"	m	struct:tss_struct
+ts_esp1	inc/mmu.h	/^	uintptr_t ts_esp1;$/;"	m	struct:tss_struct
+ts_esp2	inc/mmu.h	/^	uintptr_t ts_esp2;$/;"	m	struct:tss_struct
+ts_fs	inc/mmu.h	/^	uint16_t ts_fs;$/;"	m	struct:tss_struct
+ts_gs	inc/mmu.h	/^	uint16_t ts_gs;$/;"	m	struct:tss_struct
+ts_iomb	inc/mmu.h	/^	uint16_t ts_iomb;	\/\/ I\/O map base address$/;"	m	struct:tss_struct
+ts_ldt	inc/mmu.h	/^	uint16_t ts_ldt;$/;"	m	struct:tss_struct
+ts_link	inc/mmu.h	/^	uint32_t ts_link;	\/\/ Old ts selector$/;"	m	struct:tss_struct
+ts_padding1	inc/mmu.h	/^	uint16_t ts_padding1;$/;"	m	struct:tss_struct
+ts_padding10	inc/mmu.h	/^	uint16_t ts_padding10;$/;"	m	struct:tss_struct
+ts_padding2	inc/mmu.h	/^	uint16_t ts_padding2;$/;"	m	struct:tss_struct
+ts_padding3	inc/mmu.h	/^	uint16_t ts_padding3;$/;"	m	struct:tss_struct
+ts_padding4	inc/mmu.h	/^	uint16_t ts_padding4;$/;"	m	struct:tss_struct
+ts_padding5	inc/mmu.h	/^	uint16_t ts_padding5;$/;"	m	struct:tss_struct
+ts_padding6	inc/mmu.h	/^	uint16_t ts_padding6;$/;"	m	struct:tss_struct
+ts_padding7	inc/mmu.h	/^	uint16_t ts_padding7;$/;"	m	struct:tss_struct
+ts_padding8	inc/mmu.h	/^	uint16_t ts_padding8;$/;"	m	struct:tss_struct
+ts_padding9	inc/mmu.h	/^	uint16_t ts_padding9;$/;"	m	struct:tss_struct
+ts_ss	inc/mmu.h	/^	uint16_t ts_ss;$/;"	m	struct:tss_struct
+ts_ss0	inc/mmu.h	/^	uint16_t ts_ss0;	\/\/   after an increase in privilege level$/;"	m	struct:tss_struct
+ts_ss1	inc/mmu.h	/^	uint16_t ts_ss1;$/;"	m	struct:tss_struct
+ts_ss2	inc/mmu.h	/^	uint16_t ts_ss2;$/;"	m	struct:tss_struct
+ts_t	inc/mmu.h	/^	uint16_t ts_t;		\/\/ Trap on task switch$/;"	m	struct:tss_struct
+tss	kernel/task.c	/^static struct tss_struct tss;$/;"	v	typeref:struct:tss_struct	file:
+tss_struct	inc/mmu.h	/^struct tss_struct {$/;"	s
+type	kernel/mpconfig.c	/^	uint8_t type;                   \/\/ MP system config type$/;"	m	struct:mp	file:
+type	kernel/mpconfig.c	/^	uint8_t type;                   \/\/ entry type (0)$/;"	m	struct:mpproc	file:
+uint16_t	inc/types.h	/^typedef unsigned short uint16_t;$/;"	t
+uint32_t	inc/types.h	/^typedef unsigned int uint32_t;$/;"	t
+uint64_t	inc/types.h	/^typedef unsigned long long uint64_t;$/;"	t
+uint8_t	inc/types.h	/^typedef unsigned char uint8_t;$/;"	t
+uintptr_t	inc/types.h	/^typedef uint32_t uintptr_t;$/;"	t
+user_entry	user/main.c	/^int user_entry()$/;"	f
+utf_eflags	inc/trap.h	/^	uint32_t utf_eflags;$/;"	m	struct:UTrapframe
+utf_eip	inc/trap.h	/^	uintptr_t utf_eip;$/;"	m	struct:UTrapframe
+utf_err	inc/trap.h	/^	uint32_t utf_err;$/;"	m	struct:UTrapframe
+utf_esp	inc/trap.h	/^	uintptr_t utf_esp;$/;"	m	struct:UTrapframe
+utf_fault_va	inc/trap.h	/^	uint32_t utf_fault_va;	\/* va for T_PGFLT, 0 otherwise *\/$/;"	m	struct:UTrapframe
+utf_regs	inc/trap.h	/^	struct PushRegs utf_regs;$/;"	m	struct:UTrapframe	typeref:struct:UTrapframe::PushRegs
+va_arg	inc/stdarg.h	10;"	d
+va_end	inc/stdarg.h	12;"	d
+va_list	inc/stdarg.h	/^typedef __builtin_va_list va_list;$/;"	t
+va_start	inc/stdarg.h	8;"	d
+vcprintf	lib/printf.c	/^vcprintf(const char *fmt, va_list ap)$/;"	f
+version	kernel/mpconfig.c	/^	uint8_t version;                \/\/ [14]$/;"	m	struct:mpconf	file:
+version	kernel/mpconfig.c	/^	uint8_t version;                \/\/ local APIC version$/;"	m	struct:mpproc	file:
+vprintfmt	lib/printfmt.c	/^vprintfmt(void (*putch)(int, void*), void *putdat, const char *fmt, va_list ap)$/;"	f
+vprintk	kernel/printf.c	/^vprintk(const char *fmt, va_list ap)$/;"	f
+vsnprintf	lib/printfmt.c	/^vsnprintf(char *buf, int n, const char *fmt, va_list ap)$/;"	f
+waitdisk	boot/main.c	/^waitdisk(void)$/;"	f
+warn	inc/assert.h	11;"	d
+wpos	kernel/kbd.c	/^  uint32_t wpos;$/;"	m	struct:__anon6	file:
+write_eflags	inc/x86.h	/^write_eflags(uint32_t eflags)$/;"	f
+xchecksum	kernel/mpconfig.c	/^	uint8_t xchecksum;              \/\/ extended table checksum$/;"	m	struct:mpconf	file:
+xchg	inc/x86.h	/^xchg(volatile uint32_t *addr, uint32_t newval)$/;"	f
+xlength	kernel/mpconfig.c	/^	uint16_t xlength;               \/\/ extended table length$/;"	m	struct:mpconf	file:
+xorw	boot/boot.S	/^xorw    %ax,%ax             # Segment number zero$/;"	l
