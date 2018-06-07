@@ -135,6 +135,7 @@ int32_t do_syscall(uint32_t syscallno, uint32_t a1, uint32_t a2, uint32_t a3, ui
 		break;
 	  case SYS_stat:
 		retVal = sys_stat(a1, a2);
+		break;
 	  case SYS_unlink:
 		retVal = sys_unlink(a1); //Not yet implemented
 	  	break;

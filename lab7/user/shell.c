@@ -57,7 +57,7 @@ int ls(int argc, char **argv){
     FILINFO fno;
     int ret = stat(argv[1], &fno);
     if(ret == 0){
-        if(fno.fattrib == 32){
+        if( !(fno.fattrib & 0x10) ){
             cprintf("filename = %s, size = %d, type = %s\n", fno.fname, fno.fsize, "FILE");
             return 0;
         }
@@ -69,7 +69,7 @@ int ls(int argc, char **argv){
     }
     readdir(&dir, &fno);
     while(strlen(fno.fname)){
-        cprintf("filename = %s, size = %d, type = %s\n", fno.fname, fno.fsize, fno.fattrib != 32 ? "DIR" : "FILE");
+        cprintf("filename = %s, size = %d, type = %s\n", fno.fname, fno.fsize, (fno.fattrib & 0x10) ? "DIR" : "FILE");
         readdir(&dir, &fno);
     }
     closedir(&dir);

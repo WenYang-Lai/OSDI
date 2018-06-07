@@ -139,6 +139,10 @@ struct fs_ops elmfat_ops = {
     .read = fat_read,
     .write = fat_write,
     .lseek = fat_lseek,
+    .stat = fat_stat,
+    .opendir = fat_opendir,
+    .readdir = fat_readdir,
+    .closedir = fat_closedir,
     .unlink = fat_unlink
 };
 
